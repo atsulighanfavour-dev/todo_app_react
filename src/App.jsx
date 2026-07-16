@@ -1,11 +1,23 @@
 import React from "react";
-// import Gallery from "./component/Gallery.js";
-import {Profile, Gallery} from "./component/Gallery.js";
+import Gallery from "./component/Gallery";
+import TodoList from "./component/todo";
+import PersonTodo from "./component/person";
 
 
 export default function App() {
   return (
-    <Profile />
+    <>
+      <h1>Hedy Lamarr's Todos</h1>
+      <Gallery />
+      <ul>
+        <li>Learn React</li>
+        <li>Learn React Router</li>
+        <li>Learn React Testing Library</li>
+      </ul>
+      <TodoList />
+      <PersonTodo />
+    </>
+
     // <PageLayout>
     //   <NavigationHeader>
     //     <SearchBar />
@@ -17,7 +29,5 @@ export default function App() {
     //     <DocumentationText />
     //   </PageContent>
     // </PageLayout>
-
-   
   );
 }
