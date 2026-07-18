@@ -22,4 +22,7 @@ export default function Gallery() {
       <Profile />
     </section>
   );
+
 }
+
+
